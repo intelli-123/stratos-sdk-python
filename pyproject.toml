@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "intelli-1113-stratos-sdk"
+version = "1.0.0"
+description = "One import for Stratos AI: OpenLLMetry agent telemetry + heartbeat with auto-detected framework/model/tools (Python)."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+keywords = ["stratos", "openllmetry", "opentelemetry", "observability", "llm", "agent"]
+dependencies = [
+  "traceloop-sdk>=0.30.0",
+]
+
+[tool.setuptools.packages.find]
+include = ["stratos_sdk*"]
